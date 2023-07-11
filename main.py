@@ -10,9 +10,9 @@ from langchain.vectorstores import Pinecone
 import streamlit as st #网站创建
 import gtts #文字转语音
 
-'''
-下面的这部分代码是将文件夹中的word文档，上传到自己的向量数据库
-'''
+#'''
+#下面的这部分代码是将文件夹中的word文档，上传到自己的向量数据库
+#'''
 #首先进入文件夹查看数据
 directory_path = 'dental_data' #这边填入你自己的数据文件所在的文件夹
 data = []
@@ -54,9 +54,9 @@ for i in range(len(texts)):
     print("done")
 
 
-'''
-存储完成向量数据库之后，我们就可以运行下面的代码，用streamlit帮我们做一个简单的网页可以用来调用我们的机器人问答
-'''
+#'''
+#存储完成向量数据库之后，我们就可以运行下面的代码，用streamlit帮我们做一个简单的网页可以用来调用我们的机器人问答
+#'''
 # App framework
 # 如何创建自己的网页机器人
 st.title('😬牙医帮帮我😬') #用streamlit app创建一个标题

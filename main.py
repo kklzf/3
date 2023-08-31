@@ -59,7 +59,7 @@ for i in range(len(texts)):
 #'''
 # App framework
 # 如何创建自己的网页机器人
-st.title('😬牙医帮帮我😬') #用streamlit app创建一个标题
+st.title('😬AI奈艾斯牙医牙医帮帮我😬') #用streamlit app创建一个标题
 # 创建一个输入栏可以让用户去输入问题
 query = st.text_input('欢迎来到AI牙科诊所,你可以问我关于牙科的问题，例如：洗一次牙多少钱？')
 

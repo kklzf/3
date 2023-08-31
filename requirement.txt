@@ -1,4 +1,0 @@
-gTTS
-langchain
-pinecone_client
-streamlit

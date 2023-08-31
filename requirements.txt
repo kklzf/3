@@ -27,7 +27,7 @@ langchain==0.0.215
 langchainplus-sdk==0.0.17
 loguru==0.7.0
 lxml==4.9.2
-markdown-it-py==3.0.0
+markdown-it-py<3.0.0
 MarkupSafe==2.1.2
 marshmallow==3.19.0
 marshmallow-enum==1.5.1

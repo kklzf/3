@@ -61,7 +61,7 @@ for i in range(len(texts)):
 # 如何创建自己的网页机器人
 st.title('奈艾斯AI牙医🩺🦷') #用streamlit app创建一个标题
 # 创建一个输入栏可以让用户去输入问题
-query = st.text_input('欢迎来到AI牙科诊所,你可以问我关于牙科的问题，例如：洗一次牙多少钱？')
+query = st.text_input('欢迎来到奈艾斯AI牙科诊所,你可以问我关于牙科的问题，例如：洗一次牙多少钱？')
 
 my_bar = st.progress(0, text='等待投喂问题哦')
 # initialize search
@@ -74,7 +74,7 @@ if query:
     #llm是用来定义语言模型，在下面的例子，用的是openai，注意，此openai调用的是langchain方法不是openai本ai
     llm = OpenAI(temperature=0, max_tokens=-1, openai_api_key=OPENAI_API_KEY)
     print('1:'+ str(llm))
-    my_bar.progress(10, text='正在查询新华字典')
+    my_bar.progress(10, text='正在查询奈艾斯AI智库')
     # embedding就是把文字变成数字
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
     print('2:'+ str(embeddings))
@@ -92,7 +92,7 @@ if query:
     # 得到答案
     answer = chain.run(input_documents=docs, question=query, verbose=True)
     print('6:'+ str(answer))
-    my_bar.progress(100, text='好了')
+    my_bar.progress(100, text='好了ikun')
     st.write(answer)
     audio = gtts.gTTS(answer, lang='zh')
     audio.save("audio.wav")

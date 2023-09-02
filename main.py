@@ -48,7 +48,7 @@ pinecone.init(
     environment=PINECONE_API_ENV
 )
 # 要填入对应的index name
-index_name = "dental" # put in the name of your pinecone index here
+index_name = "dental-index" # put in the name of your pinecone index here
 for i in range(len(texts)):
     Pinecone.from_texts([t.page_content for t in texts[i]], embeddings, index_name=index_name)
     print("done")

@@ -98,8 +98,8 @@ if query:
     audio.save("audio.wav")
     st.audio('audio.wav', start_time=0)
     os.remove("audio.wav")
-    pinecone.init(
-        api_key=PINECONE_API_KEY,
-        environment=PINECONE_API_ENV
-    )
-    pinecone.Index('dental').delete(delete_all=True)
+    # pinecone.init(
+    #    api_key=PINECONE_API_KEY,
+    #   environment=PINECONE_API_ENV
+    # )
+    # pinecone.Index('dental').delete(delete_all=True)
